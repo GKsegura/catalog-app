@@ -1,0 +1,198 @@
+/* App.module.css */
+
+/* Estilo principal do container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centraliza o container */
+}
+
+/* Estilo do cabeçalho */
+.header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo do formulário */
+.form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilo do input do formulário */
+.input {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    /* Largura padrão para inputs */
+}
+
+/* Estilo do botão */
+.button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da lista de filmes */
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Espaçamento entre os cards */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo dos botões de página */
+.pageButton {
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão de página */
+.pageButton:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do botão de página desativado */
+.pageButton:disabled {
+    background-color: #ccc;
+}
+
+/* Responsividade */
+
+/* Para telas pequenas (móveis) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        /* Menor tamanho de fonte no cabeçalho */
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 5px;
+        /* Menos espaço entre os elementos do formulário */
+    }
+
+    .input {
+        width: 100%;
+        /* O input ocupa toda a largura da tela */
+        margin-right: 0;
+        /* Remove o margin do input */
+    }
+
+    .button {
+        width: 100%;
+        /* O botão ocupa toda a largura da tela */
+    }
+
+    .movieList {
+        justify-content: flex-start;
+        /* Alinha os cards ao início da tela */
+    }
+
+    .pageButton {
+        width: 100%;
+        /* O botão de página ocupa toda a largura */
+        padding: 12px;
+    }
+}
+
+/* Para telas médias (tablets) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.75rem;
+        /* Ajusta o tamanho da fonte no cabeçalho */
+    }
+
+    .form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .input {
+        width: 180px;
+        /* Diminui a largura do input */
+    }
+
+    .button {
+        width: auto;
+        /* O botão se ajusta ao tamanho do conteúdo */
+    }
+
+    .movieList {
+        justify-content: space-between;
+        /* Alinha os cards de forma mais espaçada */
+    }
+
+    .pageButton {
+        width: auto;
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 2rem;
+        /* Tamanho original do cabeçalho */
+    }
+
+    .form {
+        gap: 20px;
+    }
+
+    .input {
+        width: 250px;
+        /* Largura maior para input */
+    }
+
+    .button {
+        width: auto;
+        /* Botão ajustado ao conteúdo */
+    }
+
+    .movieList {
+        justify-content: flex-start;
+        /* Alinha os cards no início da tela */
+    }
+
+    .pageButton {
+        width: auto;
+        /* Ajuste para o botão de página */
+    }
+}
